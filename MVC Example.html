@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<script type="text/javascript" src="MVC/MvcX.js"></script>
+	<script type="text/javascript" src="MVC/controller.js"></script>
+	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+	<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+</head>
+<body>
+	<div class="jumbotron">
+		<center>
+			<div class="panel panel-danger">
+				<div class="panel-heading"><h1>MvcX JS Framework 0.0.1 Alpha</h1></div>
+				<br/><br/>
+				<h4>Mensaje que se mostrara: <span class="label label-default">Mensaje</span></h4>
+				<div style="position: relative; width: 250px;">
+					<input type="text" class="form-control" id="main" model="textBox1" value="insert here" controller="main"/>
+				</div>
+				<h4>Mensaje para remplazar el saludo: <span class="label label-default">Remplazo</span></h4>
+				<div style="position: relative; width: 250px;">
+					<input type="text" class="form-control" id="segundo" model="nuevoMensaje" value="insert here your new message" controller="main"/>
+				</div>
+				<br/><br/>
+			</div>
+		</center>
+	</div>
+	<center>
+		<div class="panel panel-primary">
+			<div class="panel-heading">Controles</div>
+			<br/><br/>
+			<button id="primero" class="btn btn-primary" event-click="saludar('hola a todos', 'seguimos')" model="a" controller="main">Saludar</button>
+			<button id="segundo" class="btn btn-success" event-click="cargar" model="b" controller="main">Cambiar</button>
+			<button id="tercero" class="btn btn-warning" event-click="comprobar" model="c" controller="main">Comprobar</button>
+			<button id="cuarto" class="btn btn-info" event-click="limpiar" model="d" controller="main">Limpiar campos</button>
+			<br/><br/>
+		</div>
+	</center>
+</body>
+</html>
